@@ -1,0 +1,310 @@
+body{
+	font-family: 'Raleway', sans-serif;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	/*position: relative;*/
+}
+
+#content {
+	margin: 40px 40px 40px 40px;
+}
+
+a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+/********
+NAV BAR
+*********/
+#svg {
+	display: flex;
+	align-item: space-between;
+	height: 40;
+	width: 120;
+	top: 50%;
+}
+
+#top {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 60 400;
+  stroke-dashoffset: -170;
+  stroke-width: 6px;
+  stroke: grey;
+  opacity: 0.5;
+  margin-right: 50px;
+}
+
+.nav-1{
+	margin-right:10px;
+}
+
+.text-1{
+  	color: gray;
+  	font-size: 13px;
+	letter-spacing: 2px;
+	display: flex;
+ 	justify-content:flex-end;
+ 	align-items: center;
+ 	position: relative;
+ 	top:-31px;
+ 	left:-30px;
+ 	opacity: 0.4;
+}
+
+.text-1:hover {
+	cursor: pointer;
+	-webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-animation: 1s;
+    animation: 1s;
+}
+
+.nav-2{
+	margin-right:10px;
+}
+
+.text-2{
+  	color: gray;
+  	font-size: 13px;
+	letter-spacing: 2px;
+	display: flex;
+ 	justify-content:flex-end;
+ 	align-items: center;
+ 	position: relative;
+ 	top:-31px;
+ 	left:-20px;
+ 	opacity: 0.4;
+}
+
+.text-2:hover {
+	cursor: pointer;
+	-webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-animation: 1s;
+    animation: 1s;
+}
+
+.nav-3{
+	margin-right:10px;
+}
+
+.text-3{
+  	color: gray;
+  	font-size: 13px;
+	letter-spacing: 2px;
+	display: flex;
+ 	justify-content:flex-end;
+ 	align-items: center;
+ 	position: relative;
+ 	top:-31px;
+ 	left:-23px;
+ 	opacity: 0.4;
+}
+
+.text-3:hover {
+	cursor: pointer;
+	-webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-animation: 1s;
+    animation: 1s;
+}
+
+.nav-4{
+	margin-right:10px;
+} 
+
+.text-4{
+  	color: gray;
+  	font-size: 13px;
+	letter-spacing: 2px;
+	display: flex;
+ 	justify-content:flex-end;
+ 	align-items: center;
+ 	position: relative;
+ 	top:-31px;
+ 	left:-27px;
+ 	opacity: 0.4;
+}
+
+.text-4:hover {
+	cursor: pointer;
+	-webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-animation: 1s;
+    animation: 1s;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 60 400;
+  	stroke-dashoffset: -170;
+    stroke-width: 6px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 3px;
+  }
+}
+
+.nav-1:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+.nav-2:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+.nav-3:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+.nav-4:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+/***********
+MIDDLE  
+***********/
+
+#middle {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 100px 100px 100px 100px;
+}
+
+.title {
+	font-size: 40px;
+	letter-spacing: 2px;
+	margin: 30px 30px 30px 30px;
+}
+
+/***********
+BOTTOM  
+***********/
+
+#logos {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.part-1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin: 60px 100px 60px 100px;
+}
+
+.graphic-design{
+	letter-spacing: 2px;
+	-webkit-transition: 0.6s ease-out;
+    -moz-transition:  0.6s ease-out;
+    
+
+}
+
+.part-1:hover {
+	opacity: 0.7;
+}
+
+.design-photo:hover {
+	opacity: 0.7;
+  	-webkit-animation:  spin 1s;
+    -moz-animation: spin 1s;
+    animation: spin 1s;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.design-photo {
+	margin: 10px 10px 10px 10px;
+}
+
+.part-2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin: 60px 100px 60px 100px;
+}
+
+.layout {
+	letter-spacing: 2px;
+}
+
+.part-2:hover {
+	opacity: 0.7;
+}
+
+.layout-photo:hover {
+	opacity: 0.7;
+    transition: transform .5s;
+    -webkit-animation:  spin 1s;
+    -moz-animation: spin 1s;
+    animation: spin 1s;
+}
+
+
+.layout-photo {
+	margin: 10px 10px 10px 10px;
+}
+
+.part-3 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin: 60px 100px 60px 100px;
+}
+
+.sketches {
+	letter-spacing: 2px;
+}
+
+.part-3:hover {
+	opacity: 0.7;
+}
+
+.sketches-photo:hover {
+	opacity: 0.7;
+    transition: transform .5s;
+    -webkit-animation:  spin 1s;
+    -moz-animation: spin 1s;
+    animation: spin 1s;
+}
+
+.sketches-photo {
+	margin: 10px 10px 10px 10px;
+}
+
