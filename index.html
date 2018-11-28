@@ -5,6 +5,25 @@
 	<title>Cristal Banh</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/home.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<script src='https://code.jquery.com/jquery-1.11.3.min.js'></script>
+	<script type='text/javascript' src='assets/script/script.js'></script>
+	<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+	<script src="assets/script/typeit.min.js"></script>
+	<script> 
+		$(document).ready(function(){
+			$('#type-it').typeIt({
+			   	strings: ['Hi I\'m Cristal!', 'I\'m an artist', 'A dog lover', 'An adventurer!'],
+			   	loop: true,
+			    speed: 110,
+			    breakLines: false,
+			    loop: true,
+			    loopDelay: 1500,
+			    autoStart: true
+
+			});
+			$("body").hide().fadeIn(1200);
+			});
+	</script>
 </head>
 
 <body>	
@@ -53,7 +72,7 @@
 			</div>
 
 			<div id = "right-side">
-				<div id = "title">Hi, I'm Cristal!</div>
+				<div id="type-it"></div>				
 				<div id = "intro-1">
 					<p>I'm probably jamming to some music, making art, designing something, getting lost exploring, or petting a dog!</p>
 				</div>
@@ -71,7 +90,6 @@
 		</div>
 	</div>
 
-	<script src='https://code.jquery.com/jquery-1.11.3.min.js'></script>
-	<script type='text/javascript' src='assets/script/script.js'></script>
+
 </body>
 </html>
